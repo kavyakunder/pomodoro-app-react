@@ -19,4 +19,6 @@ code {
 
 :root {
   --btn-color: #475ef0;
+  --font-family: "Roboto", sans-serif;
+  --grey-color: #5d5d5d;
 }

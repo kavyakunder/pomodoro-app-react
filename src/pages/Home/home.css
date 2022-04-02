@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   height: 100vh;
   align-items: center;
@@ -23,7 +23,7 @@ body {
   max-width: 50%;
 }
 .title {
-  color: gray;
+  color: var(--grey-color);
   font-size: 2rem;
 }
 .hero-img {
@@ -52,7 +52,7 @@ nav {
 }
 
 .link:hover {
-  color: #5d5d5d;
+  color: var(--grey-color);
 }
 
 .list-non-bullet {
