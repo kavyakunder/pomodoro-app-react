@@ -3,7 +3,7 @@ import "./home.css";
 function Home() {
   return (
     <>
-      <body>
+      <main className="body-container">
         <section className="container">
           <div className="main">
             <h2 className="title">Pomodoro</h2>
@@ -19,7 +19,7 @@ function Home() {
 
         <footer>Made with code by Kavya</footer>
         <script src="index.js"></script>
-      </body>
+      </main>
     </>
   );
 }
