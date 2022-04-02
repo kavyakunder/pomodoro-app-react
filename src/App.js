@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home/Home";
+// import Timer from "./pages/Timer/Timer";
+// import Tasks from "./pages/Tasks/Tasks";
 
+import "./pages/Home/home.css";
+import { Route, Routes, Link } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <nav>
+          <ul className="list-non-bullet  nav-menu">
+            <li className="list-item-inline">
+              <Link className="link" to="/">
+                Home
+              </Link>
+            </li>
+            <li className="list-item-inline">
+              <Link className="link" to="/tasks">
+                Tasks
+              </Link>
+            </li>
+            <li className="list-item-inline">
+              <Link className="link" to="/timer">
+                Timer
+              </Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Routes>
+          {/* <Route path="/timer" element={<Timer />} /> */}
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/tasks" element={<Tasks />} /> */}
+        </Routes>
+      </div>
+      <footer>Made with code by Kavya</footer>
     </div>
   );
 }
