@@ -1,8 +1,7 @@
 import Home from "./pages/Home/Home";
 // import Timer from "./pages/Timer/Timer";
-// import Tasks from "./pages/Tasks/Tasks";
+import Tasks from "./pages/Tasks/Tasks";
 
-import "./pages/Home/home.css";
 import { Route, Routes, Link } from "react-router-dom";
 function App() {
   return (
@@ -31,10 +30,10 @@ function App() {
         <Routes>
           {/* <Route path="/timer" element={<Timer />} /> */}
           <Route path="/" element={<Home />} />
-          {/* <Route path="/tasks" element={<Tasks />} /> */}
+          <Route path="/tasks" element={<Tasks />} />
         </Routes>
       </div>
-      <footer>Made with code by Kavya</footer>
+      {/* <footer>Made with code by Kavya</footer> */}
     </div>
   );
 }
