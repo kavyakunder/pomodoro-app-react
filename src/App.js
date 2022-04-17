@@ -1,7 +1,7 @@
 import Home from "./pages/Home/Home";
 // import Timer from "./pages/Timer/Timer";
 import Tasks from "./pages/Tasks/Tasks";
-
+import Pomodoro from "./pages/Pomodoro/Pomodoro";
 import { Route, Routes, Link } from "react-router-dom";
 function App() {
   return (
@@ -20,15 +20,15 @@ function App() {
               </Link>
             </li>
             <li className="list-item-inline">
-              <Link className="link" to="/timer">
-                Timer
+              <Link className="link" to="/pomodoro">
+                Pomodoro
               </Link>
             </li>
           </ul>
         </nav>
 
         <Routes>
-          {/* <Route path="/timer" element={<Timer />} /> */}
+          <Route path="/pomodoro" element={<Pomodoro />} />
           <Route path="/" element={<Home />} />
           <Route path="/tasks" element={<Tasks />} />
         </Routes>
