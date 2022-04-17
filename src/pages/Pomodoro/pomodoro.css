@@ -1,0 +1,13 @@
+.pomodoro-page {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.task-contents {
+  margin-top: -8rem;
+  background-color: #ececf3;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #cacacb;
+}

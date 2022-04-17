@@ -1,0 +1,25 @@
+.control-pomodoro {
+  margin: 4rem 5rem 0 0;
+}
+
+.control-pomodoro button {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  background-color: var(--btn-color);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.work-time {
+  margin-left: 5rem;
+}
+
+.time-pomodoro {
+  margin-top: 2rem;
+}
+
+.time {
+  font-size: 2.3rem;
+}
