@@ -1,0 +1,31 @@
+.input-form {
+  position: relative;
+  width: 30rem;
+  margin: 30px auto 20px auto;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px #8a8989;
+}
+.input,
+.textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2rem;
+  font-family: inherit;
+  resize: none;
+}
+.btn-add {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: var(--btn-color);
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0 1px 3px var(--grey-color);
+  cursor: pointer;
+  outline: none;
+}

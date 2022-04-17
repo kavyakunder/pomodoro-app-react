@@ -17,7 +17,7 @@ function Home() {
           </div>
         </section>
 
-        <footer>Made with code by Kavya</footer>
+        {/* <footer>Made with code by Kavya</footer> */}
         <script src="index.js"></script>
       </main>
     </>
