@@ -1,6 +1,6 @@
 import React from "react";
-import "./modal.css";
-function Modal({ id, name, description, timer, breakTimer, deleteTodo }) {
+import "./taskCard.css";
+function TaskCard({ id, name, description, timer, breakTimer, deleteTodo }) {
   return (
     <>
       <div className="note">
@@ -16,4 +16,4 @@ function Modal({ id, name, description, timer, breakTimer, deleteTodo }) {
   );
 }
 
-export default Modal;
+export default TaskCard;
