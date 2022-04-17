@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./home.css";
 function Home() {
   return (
@@ -10,7 +11,9 @@ function Home() {
             <h1 className="main-msg">
               Master your minutes to master your life.
             </h1>
-            <button className="btn btn-start">Get Started</button>
+            <Link to="/tasks">
+              <button className="btn btn-start">Get Started</button>
+            </Link>
           </div>
           <div className="img-div">
             <img className="hero-img" src="assets/images/pomo.png" alt="img" />
