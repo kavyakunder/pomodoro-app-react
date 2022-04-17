@@ -11,6 +11,12 @@ export default function InputCard({ saveToList }) {
   });
 
   const appendTaskToList = (e) => {
+    const defaultTaskTemplate = {
+      taskName: "",
+      taskDescription: "",
+      taskTime: "",
+      breakTime: "",
+    };
     const task = {
       id: uuid(),
       name: inputPomodoro.taskName,
@@ -20,12 +26,7 @@ export default function InputCard({ saveToList }) {
     };
 
     saveToList(task);
-    setInputPomodoro({
-      taskName: "",
-      taskDescription: "",
-      taskTime: "",
-      breakTime: "",
-    });
+    setInputPomodoro(defaultTaskTemplate);
     e.preventDefault();
   };
 
