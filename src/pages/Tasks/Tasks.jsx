@@ -1,15 +1,14 @@
 import { useState } from "react";
 import InputCard from "../../components/InputCard/InputCard";
-import Modal from "../../components/Modal/Modal";
+import TaskCard from "../../components/TaskCard/TaskCard";
 
 export default function Tasks() {
-  const [taskList, settaskList] = useState([]);
+  const [taskList, setTaskList] = useState([]);
   const saveToList = (task) => {
-    settaskList([...taskList, task]);
+    setTaskList([...taskList, task]);
   };
   const deleteTodo = (taskId) => {
-    const list = taskList.filter((taskItem) => taskItem.id !== taskId);
-    settaskList(list);
+    setTaskList((prev) => prev.filter((taskItem) => taskItem.id !== taskId));
   };
 
   return (
@@ -18,7 +17,7 @@ export default function Tasks() {
       <div>
         <>
           {taskList.map((taskItem, index) => (
-            <Modal
+            <TaskCard
               key={taskItem.id}
               {...taskItem}
               deleteTodo={deleteTodo}
